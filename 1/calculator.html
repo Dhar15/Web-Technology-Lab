@@ -1,0 +1,77 @@
+<!-- Q.1) Write a Javascript to design a simple calculator to perform the following operations: Sum, Product, Difference and Quotient. -->
+
+
+<!DOCTYPE html>
+	<head>
+		<style>
+			table,td,th {
+				border: 1px solid black;
+				width: 33%;
+				text-align:center;
+				background-color: DarkGray;
+				border-collpase:collapse;
+			}
+			
+			table {
+				margin: auto;
+			}
+
+			input {
+				text-align: right;
+			}						
+		</style>
+
+		<script type="text/javascript">
+			
+			function calc(clicked_id) {
+			
+                        	var v1 = parseFloat(document.getElementById("value1").value);
+				var v2 = parseFloat(document.getElementById("value2").value);
+				if(isNaN(v1) || isNaN(v2))
+					alert("Enter Valid Number!!");
+				else if(clicked_id == "add")
+					document.getElementById("answer").value = v1 + v2;
+				else if(clicked_id == "sub")
+					document.getElementById("answer").value = v1 - v2;
+				else if(clicked_id == "mul")
+					document.getElementById("answer").value = v1 * v2;
+				else if(clicked_id == "div")
+					document.getElementById("answer").value = v1 / v2;
+				
+			}
+
+			function cls() {
+				value1.value = "";
+				value2.value = "";
+				answer.value = "";
+			}
+	
+		</script>
+	</head>
+
+	<body>
+		<table>
+			<tr> <th colspan="4"> SIMPLE CALCULATOR </th> </tr>
+			<tr>
+				<td> Value 1 </td>
+				<td> <input type="text" id="value1" value=""> </td>
+			
+				<td> Value 2 </td>
+				<td> <input type="text" id="value2" value=""> </td>
+			</tr>
+
+			<tr>
+				<td> <input type="button" value="Add" id="add" onclick="calc(this.id)" /> </td>
+                                <td> <input type="button" value="Subtract" id="sub" onclick="calc(this.id)" /> </td>
+				<td> <input type="button" value="Multiply" id="mul" onclick="calc(this.id)" /> </td>
+				<td> <input type="button" value="Divide" id="div" onclick="calc(this.id)" /> </td>
+			</tr>
+
+			<tr>
+				<td> Answer: </td>
+				<td> <input type="text" id="answer" value=""/ disabled> </td>
+				<td colspan="2"> <input type="button" value="Clear All" onclick="cls()"/> </td>
+			</tr>
+		</table>
+	</body>
+</html>
