@@ -1,0 +1,46 @@
+<!-- Write a JavaScript code that displays the text “TEXT-GROWING” with increasing font size in interval of 100ms in RED COLOR until the font size reaches 50pt.
+     Henceforth, it displays “TEXT SHRINKING” in BLUE color until the font size decreases to 5pt. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style> 
+			p {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);						/* The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). */
+			}
+		</style>
+	</head>
+
+	<body>
+		<p id="demo"> </p>
+		<script>
+			var var1 = setInterval(inTimer,100);							<!-- The setInterval() method calls the function inTimer at specified intervals of 100 ms. -->
+			var fs = 5;
+			var ids = document.getElementById("demo");
+
+			function inTimer() {
+				ids.innerHTML = 'TEXT GROWING';
+				ids.setAttribute("style", "font-size:" + fs + "pt; color:red;");		<!-- The setAttribute() method adds the specified attribute to an element, and gives it the specified value. -->
+				fs += 5;
+				
+				if(fs >= 50) {
+					clearInterval(var1);							<!-- The clearInterval() method clears the timer set using the setInterval() method. -->
+					var var2 = setInterval(deTimer,100);
+				}
+			}
+
+			function deTimer() {
+				fs -= 5;
+				ids.innerHTML = 'TEXT SHRINKING';
+				ids.setAttribute("style", "font-size:" + fs + "pt; color:blue;");
+
+				if(fs === 5) {
+					clearInterval(var2);
+				}
+			}
+		</script>
+	</body>
+</html>
