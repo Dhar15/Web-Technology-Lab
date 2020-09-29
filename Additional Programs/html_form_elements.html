@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Form Elements </title>
+	<style type="text/css">
+		fieldset {
+			background-color: #F4F0F0;
+		}
+
+		h3 {
+			font-family: monospace;
+			font-size: 25px;
+			font-style: italic;
+		}
+
+		input, select {
+			margin-bottom: 15px;
+			padding: 2px;
+		}
+
+		legend {
+			font-weight: bold;
+			font-size: 20px;
+			padding: 12px;
+		}
+
+		textarea {
+			vertical-align: top;
+		}
+	</style>
+</head>
+<body>
+	<h3 align="center"> ~ Form Elements in HTML ~ </h3>
+
+	<form>
+
+		<fieldset>
+
+			<legend> Registration Form </legend>
+
+			<label for="fname"> First Name - </label>
+			<input type="text" name="firstName" id="fname"> </br>
+
+			<label for="lname"> Last Name - </label>
+			<input type="text" name="lastName" id="lname"> <br />
+
+			<label for="email"> Email - </label>
+			<input type="text" name="email" id="email"> <br />
+
+			<label for="number"> Phone Number - </label>
+			<input type="text" name="number" id="number"> <br />
+
+			<label for="age"> Age - </label>
+			<input type="number" min="16" max="50" value="16" id="age"> </br>
+
+			<label for="dob"> Date Of Birth - </label>
+			<input type="Date" name="dob"> </br>
+
+			<label for="branch"> Choose your branch: </label>
+			<select id="branch"> 
+				<option value="CSE"> CSE </option>
+				<option value="ISE"> ISE </option>
+				<option value="ME"> ME </option>
+				<option value="Civil"> CIVIL </option>
+				<option value="BT"> BioTech </option>
+			</select> <br />
+
+			<label> Choose a gender: </label>
+
+			<input type="radio" name="m">  <label for="gender"> Male </label>
+			<input type="radio" name="m"> <label for="gender"> Female </label>
+			<input type="radio" name="m"> <label for="gender"> Prefer not to say </label> </br>
+
+			<label for="address"> Permanant Address: </label>
+			<textarea placeholder="Fill here!" name="address" id="address" rows="5" cols="30"></textarea> </br> </br>
+
+			<label for="tech"> Select your tech stack - </label> </br>
+			
+			<input type="checkbox" name="java"> <label> Web Development </label>
+			<input type="checkbox" name="java"> <label> Mobile App Development </label>
+			<input type="checkbox" name="java"> <label> Backend Developer </label>
+			<input type="checkbox" name="java"> <label> Machine Learning Enthusiast </label> </br>
+
+			<input type="submit" name="Submit">
+
+		</fieldset>	
+
+	</form>
+</body>
+</html>
