@@ -1,0 +1,34 @@
+<!-- Q.4) Develop and demonstrate a HTML5 file that includes Javascript that uses functions for the following problems : 
+          a) Parameter- String b) Output - The position of the leftmost vowel in the string 
+          c) Parameter- Number d) Output - The number with its digits in the reverse order -->
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			var str = prompt("Enter the input - ");
+			if(!isNaN(str)) {
+				var num,rev=0,rem;
+				num = parseInt(str);
+				while(num != 0) {
+					rem = num % 10;
+					rev = rev * 10 + rem;
+					num = parseInt(num / 10);
+				}
+				alert("Reverse of " + str + " is " + rev);
+			}
+			else {
+				str = str.toUpperCase();
+				for(var i=0;i<str.length;i++) {
+					var ch = str.charAt(i);
+					if(ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+						break;
+				}
+				if(i < str.length)
+					alert("The position of left most vowel is: " + (i+1));
+				else
+					alert("No vowels found in the string!");
+			}
+		</script>
+	</body>
+</html>
