@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Review Form</title>
+    </head>
+
+    <body>
+        <form method="post" action="//submit.form" onSubmit="return validateForm();">
+            <div style="max-width: 400px;">
+            </div>
+            <div style="padding-bottom: 18px;font-size : 24px;">REVIEW FORM </div>
+            <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
+            <input type="text" id="data_2" name="data_2" style="max-width : 450px;" class="form-control"/>
+            </div>
+            <div style="padding-bottom: 18px;"> Which category product did you buy? <br/>
+            <select id="data_3" name="data_3" style="max-width : 450px;" class="form-control">
+            <option>Fruits & Vegetables </option>
+            <option>Meat & Diary </option>
+            <option>Home & Kitchen </option>
+            <option>Beverages</option>
+            <option>Snacks</option>
+            </select>
+            </div>
+            <div style="padding-bottom: 18px;">Rate this product<span style="color: red;"> *</span><br/>
+            <select id="data_4" name="data_4" style="max-width : 150px;" class="form-control"><option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+            </div>
+            <div style="padding-bottom: 18px;">Pros<br/>
+            <textarea id="data_6" false name="data_6" style="max-width : 450px;" rows="3" class="form-control"></textarea>
+            </div>
+            <div style="padding-bottom: 18px;">Cons<br/>
+            <textarea id="data_7" false name="data_7" style="max-width : 450px;" rows="3" class="form-control"></textarea>
+            </div>
+            <div style="padding-bottom: 18px;">Feedback - <span style="color: red;"> *</span><br/>
+            <textarea id="data_8" false name="data_8" style="max-width : 450px;" rows="9" class="form-control"></textarea>
+            </div>
+            <div style="padding-bottom: 18px;">Would you recommend this product?<br/>
+            <span><input type="radio" id="data_9_0" name="data_9" value="Yes"/> Yes</span><br/>
+            <span><input type="radio" id="data_9_1" name="data_9" value="No"/> No</span><br/>
+            <span><input type="radio" id="data_9_2" name="data_9" value="I am not sure"/> I am not sure</span><br/>
+            </div>
+            <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit" onclick="alertFunc(); window.history.go(-1); return false;"/></div>
+            <div>
+            <script type="text/javascript"> function alertFunc() { alert("Thank you for your feedback! Redireting.."); } </script>
+            </div>
+            </form>
+            
+            <script type="text/javascript">
+                function validateForm() {
+                    if (isEmpty(document.getElementById('data_2').value.trim())) {
+                        alert('Name is required!');
+                        return false;
+                    }
+                    
+                    if (isEmpty(document.getElementById('data_8').value.trim())) {
+                        alert('Review is required!');
+                        return false;
+                    }
+                    return true;
+                }
+                    
+                function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+                    
+                function validateEmail(email) {
+                    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                    return isEmpty(email) || re.test(email);
+                }
+
+                function goBack() {
+                    window.history.back();
+                }
+                    
+            </script>
+    </body>
+</html>
+
+

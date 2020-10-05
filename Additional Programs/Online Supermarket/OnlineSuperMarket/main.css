@@ -1,0 +1,51 @@
+body {
+    background-color: lightslategray;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 25px;
+    font-style: inherit;
+    color: lightcyan;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.form {
+    position: absolute;
+	top:40px;
+	right: 10px;
+  	left:15px;
+	   
+}
+
+a:link {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
