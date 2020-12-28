@@ -1,6 +1,8 @@
-<!-- Q.9) Write a PHP program named states.php that declares a variable "states" with value "Mississippi Alabama Texas Massachusetts Kansas". Write a PHP program that does the following:
+<!-- Q.9) Write a PHP program named states.php that declares a variable "states" with value "Mississippi Alabama Texas Massachusetts Kansas". Write a PHP program that does the 
+following:
 	a) Search for a word in variable states that ends in 'xas'. Store this word as element 0 of a list named statesList.
-	b) Search for a word in states that begins with k and ends with s. Perform a case-insensitive comparison. [Note: Passing re.i as a second parameter to method compile performs a case-insensitive comparison.] Store this word as element 1 of statesList.
+	b) Search for a word in states that begins with k and ends with s. Perform a case-insensitive comparison. [Note: Passing re.i as a second parameter to method compile 
+	performs a case-insensitive comparison.] Store this word as element 1 of statesList.
 	c) Search for a word in states that begins with M and ends with s. Store this word as element 2 of the list.
 	d) Search for a word in states that ends in a. Store this word as element 3 of the list. -->
 
