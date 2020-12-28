@@ -1,7 +1,7 @@
 <!-- Q.8) Write a PHP program to - 
-	        a) Find the transpose of a matrix.
-			b) Multiplication of two matrices.
-			c) Addition of two matrices -->
+	     a) Find the transpose of a matrix.
+	     b) Multiplication of two matrices.
+	     c) Addition of two matrices -->
 
 <?php 
 	// Form 2D matrices
