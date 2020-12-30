@@ -3,7 +3,7 @@ This repo consists of Javascript and PHP programs for designing simple web pages
 
 Apart from programs in curriculum, I have added few basic HTML and CSS programs as Additional programs which are great for any beginner to get started! :) <br/> <br/>
 
-### <ins>***How to run PHP script on your browser?***</ins> (Programs 6-9)
+### <ins>***How to run PHP script on your browser?***</ins> (Programs 6-10)
 
 #### Step 1: To run the PHP program, we require a high level web server. XAMPP constitutes an apache HTTP server, MariaDB database and interpreters for the PHP script. WampServer is another good alternative.  
 Download XAMPP from here - [XAMPP download](https://www.apachefriends.org/download.html)
