@@ -22,8 +22,8 @@
 	}
 
 	echo "The second matrix ="."<br/>";
-	for($row=0; $row<$m; $row++) {
-		for($col=0; $col<$n; $col++) {
+	for($row=0; $row<$p; $row++) {
+		for($col=0; $col<$q; $col++) {
 			echo " ". $b[$row][$col];
 		}
 		echo "<br/>";
