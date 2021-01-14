@@ -53,10 +53,10 @@
 				if(is_numeric($num1) and is_numeric($num2))	//Check the variable is number or numeric string
 				{
 					echo "<table>";
-					echo "<tr><td> Addition: </td><td><p>".($num1 + $num2)."</p></td>";
-					echo "<tr><td> Subtraction: </td><td><p>".($num1 - $num2)."</p></td>";
-					echo "<tr><td> Multiplication: </td><td><p>".($num1 * $num2)."</p></td>";
-					echo "<tr><td> Division: </td><td><p>".($num1 / $num2)."</p></td>";
+					echo "<tr><td> Addition: </td><td><p>".($num1 + $num2)."</p></td></tr>";
+					echo "<tr><td> Subtraction: </td><td><p>".($num1 - $num2)."</p></td></tr>";
+					echo "<tr><td> Multiplication: </td><td><p>".($num1 * $num2)."</p></td></tr>";
+					echo "<tr><td> Division: </td><td><p>".($num1 / $num2)."</p></td></tr>";
 					echo "</table>";
 				}
 				else 
