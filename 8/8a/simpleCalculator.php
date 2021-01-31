@@ -9,6 +9,7 @@
 				width: 33.3%;
 				text-align: center;
 				background-color: DarkGray;
+				border-collapse: collapse;
 			}
 
 			table {
